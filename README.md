@@ -1,7 +1,8 @@
-AI Trademarkia Classification
+# AI Trademarkia Classification
+
 This project involves building an AI model to classify trademark classes based on descriptions of goods and services. The model is trained using data from the USPTO ID Manual and leverages BERT for classification. The project includes a REST API for inference and is dockerized for deployment.
 
-Table of Contents
+# Table of Contents
 Project Overview
 Setup
 Data
@@ -79,28 +80,5 @@ Copy code
   "class_id": "<predicted_class_id>",
   "class_description": "<description>"
 }
-Running the API Server
-bash
-Copy code
-python manage.py runserver
-Docker
-The project is dockerized for easy deployment. To build and run the Docker container:
 
-Build the Docker Image
 
-bash
-Copy code
-docker build -t trademarkia-classification .
-Run the Docker Container
-
-bash
-Copy code
-docker run -p 8000:8000 trademarkia-classification
-Contributing
-To contribute to this project:
-
-Fork the repository.
-Create a feature branch (git checkout -b feature/YourFeature).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/YourFeature).
-Create a new Pull Request.
